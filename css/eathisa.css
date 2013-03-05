@@ -1,0 +1,253 @@
+body { font-family: 'Open Sans', sans-serif; }
+.ui-body-c, .ui-overlay-c { font-family: 'Open Sans', sans-serif; border: 0 !important; }
+
+#site-buttons { position: absolute; right: 25px; top: 50%; z-index: 99999; margin-top: -55px  }
+#site-buttons a { 
+	/*General*/
+	transform: scale(1.7, 1.7);
+	/*Chrome, Safari*/
+	-webkit-transform: scale(1.7, 1.7);
+}
+
+#site-buttons a { margin: 20px 0; }
+
+#site-buttons a.paged.prev { display: none; }
+
+.ui-content { padding: 0; }
+#mypanel { background: #00388F; }
+
+#catalogo .content-info { width: 100%; height: 100%; overflow: hidden; }
+img.fullimg { height: 99.5%; }
+
+.img {  
+        width: 100%; 
+        height: 100%;
+        background-size: auto 100%; 
+    }
+.ficha {  
+        width: 100%; 
+        height: 100%;
+        background-size: auto 100%; 
+    }
+
+.ficha { position: relative; padding: 1px 0 0 0; }
+.ficha h2 { background: url(../images/title_subcategory.png) no-repeat; text-transform: uppercase; color: #00257c;  text-align: center; padding: 13px 0; font-size: 16px; margin: 0; }
+
+
+#pdf_book { width: 800px; height: 600px;
+	margin:0 auto;
+	position:relative;
+	left:0;
+
+	overflow: hidden;
+	
+	opacity:1;
+}
+
+#magazine{
+	width:100%;
+	height: 768px;
+	margin:0 auto;
+	position:relative;
+	left:0;
+
+	overflow: hidden;
+	
+	opacity:1;
+}
+
+#magazine .hoja{
+	width:100%;
+	height: 100%;
+	overflow:hidden;
+    position: relative;
+}
+
+
+/* Center the magazine when the cover is shown */
+#magazine.centerStart{
+	left:0px;
+}
+
+/* Center the magazine when the last page is shown */
+#magazine.centerEnd{
+	left:260px;
+}
+
+.page .img img {
+	height:99.5%;
+	display:block;
+}
+
+.centerStart .turn-page-wrapper:first-child{
+	box-shadow:0 0 10px #040404;
+}
+
+/* Page Numbers */
+
+span.pageNum{
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 25px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    font-size: 11px;
+    height: 24px;
+    line-height: 22px;
+    opacity: 0.9;
+    position: absolute;
+    text-align: center;
+    width: 55px;
+}
+
+span.pageNum.left{
+	left:0;
+	right:auto;
+}
+
+span.pageNum.right{
+	left:auto;
+	right:0;
+}
+
+/* Hide the page number on the cover */
+#page1 .pageNum{
+	display:none;
+}
+
+/* Catalogo */
+
+h2.title_catalogo { font-weight: normal; text-transform: uppercase; background: #019CDF; color: #FFF; padding: 15px 15px; margin: 0; }
+
+div.catalogo_list { background: #FFF url(images/logo_catalogo.jpg) no-repeat left top; position: relative; padding: 1px 0;   }
+
+div.catalogo_list h1.header_title { float: right; color: #FFF; text-shadow: 0 0 0 #FFF; margin: 20px 0;  background: url(images/bkg_header_title.png) no-repeat left top,  -webkit-linear-gradient(0deg, #29a5de, #2e3191); text-align: right; padding: 10px; width: 55%; font-weight: normal; font-size: 18px; }
+div.catalogo_list .color_bars  {  position: absolute; display: block; width: 25px; height: 85px; background: #0092e1;  top: 75px; left: -5px;}
+
+/* Tuberias */
+div.catalogo_list.tuberias-y-fitting h1.header_title { background: url(images/bkg_header_title.png) no-repeat left top, -webkit-linear-gradient(0deg, #e30000, #9d0000); }
+div.catalogo_list.tuberias-y-fitting .color_bars { background: #e30000; }
+
+/* IAA */
+div.catalogo_list.instrumentos-para-analisis-y-auscultacion-de-redes h1.header_title { background: url(images/bkg_header_title.png) no-repeat left top, -webkit-linear-gradient(0deg, #00c404, #006837); }
+div.catalogo_list.instrumentos-para-analisis-y-auscultacion-de-redes .color_bars { background: #006837; }
+/* IA */
+div.catalogo_list.instrumentacion-y-analisis h1.header_title { background: url(images/bkg_header_title.png) no-repeat left top, -webkit-linear-gradient(0deg, #ffb003, #ff8e33); }
+div.catalogo_list.instrumentacion-y-analisis .color_bars { background: #ffb003; }
+/* EDD */
+div.catalogo_list.equipos-de-desinfeccion h1.header_title { background: url(images/bkg_header_title.png) no-repeat left top, -webkit-linear-gradient(0deg, #ba68f9, #7600a1); }
+div.catalogo_list.equipos-de-desinfeccion .color_bars { background: #ba68f9; }
+/* EDTDAYL */
+div.catalogo_list.equipos-de-tratamiento-de-aguas-y-liquidos h1.header_title { background: url(images/bkg_header_title.png) no-repeat left top, -webkit-linear-gradient(0deg, #ffee00, #ffb900); }
+div.catalogo_list.equipos-de-tratamiento-de-aguas-y-liquidos .color_bars { background: #ffee00; }
+
+div.catalogo_list h2.subtitle_cat { clear: both; margin: 10px 0 0 40px; font-size: 18px; }
+
+div.catalogo { padding: 0 75px; height: 186px; clear: left; }
+div.catalogo a {text-decoration: none;; text-shadow: 0 0 0; cursor: pointer; }
+div.catalogo .img_cat { padding: 20px 64px 20px 20px; float: left; height: auto; width: 155px; text-align: center;  }
+div.catalogo .img_cat a.openpdf { display: block; background: #e5e5e5; }
+div.catalogo .img_cat img { height: auto; width: 155px; }
+div.catalogo .img_cat h4 { background:  -webkit-linear-gradient(0deg, #ea653b, #940701); border: 1px solid #e5e5e5; color: #FFF; text-align: center; margin: -5px 0; padding: 10px 2%; width: 96%; border-radius: 0 0 5px 5px; font-size: 12px; font-weight: normal; }
+div.catalogo .img_cat h4.min { padding: 5px 2%; }
+div.catalogo .info { padding: 10px 20px; font-size: 12px; text-align: justify; }
+
+.catalogo_content { padding: 0 75px; text-align: justify; font-size: 12px; clear: both;}
+
+
+/* Indice */
+.ilink { position: absolute; display: block; /*opacity: .5; background: #000;*/  width: 300px; text-indent: -99999px; color: #FFF; text-shadow: 0 0 0 #FFF; }    
+    .ilink.valvula { left: 44px;top: 24px; height: 300px; }
+    .ilink.valvula_1 { left: 44px;bottom: 250px; }
+    .ilink.valvula_2 { left: 44px;bottom: 162px; }
+    .ilink.valvula_3 { left: 361px; top: 37px; }
+    .ilink.valvula_4 { right: 364px;bottom: 473px; }
+    .ilink.tyf_4 { right: 364px; bottom: 58px; height: 200px; }
+    .ilink.valvula_5 { right: 46px; top: 114px; height: 296px; }
+    .ilink.valvula_6 { right: 46px; bottom: 316px; }
+    .ilink.valvula_7 { bottom: 262px; right: 45px; }
+    .ilink.valvula_8 { bottom: 214px; right: 46px; }
+    .ilink.valvula_9 { bottom: 112px; right: 46px; height: 34px; }
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
